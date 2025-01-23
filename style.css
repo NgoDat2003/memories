@@ -1,7 +1,7 @@
 /* Thêm hiệu ứng fade-in và hover cho mỗi memory-item */
 .memory-item {
   opacity: 0;
-  transition: opacity 1s ease-in-out;
+  transition: opacity 2s ease-in-out;
 }
 
 .memory-item.visible {
@@ -13,15 +13,15 @@
 }
 
 .wow.fadeInLeft {
-  animation: fadeInLeft 1s forwards;
+  animation: fadeInLeft 2s forwards;
 }
 
 .wow.fadeInUp {
-  animation: fadeInUp 1s forwards;
+  animation: fadeInUp 2s forwards;
 }
 
 .wow.fadeInRight {
-  animation: fadeInRight 1s forwards;
+  animation: fadeInRight 2s forwards;
 }
 
 @keyframes fadeInLeft {
