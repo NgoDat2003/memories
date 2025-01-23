@@ -1,0 +1,230 @@
+/* Thêm hiệu ứng fade-in và hover cho mỗi memory-item */
+.memory-item {
+  opacity: 0;
+  transition: opacity 1s ease-in-out;
+}
+
+.memory-item.visible {
+  opacity: 1;
+}
+
+.wow {
+  visibility: hidden;
+}
+
+.wow.fadeInLeft {
+  animation: fadeInLeft 1s forwards;
+}
+
+.wow.fadeInUp {
+  animation: fadeInUp 1s forwards;
+}
+
+.wow.fadeInRight {
+  animation: fadeInRight 1s forwards;
+}
+
+@keyframes fadeInLeft {
+  0% {
+    transform: translateX(-50px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@keyframes fadeInUp {
+  0% {
+    transform: translateY(50px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@keyframes fadeInRight {
+  0% {
+    transform: translateX(50px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+/* Hiệu ứng hover cho card */
+.card:hover {
+  transform: scale(1.05);
+  transition: transform 0.3s ease-in-out;
+}
+
+.card-img-top {
+  height: 200px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.section-title {
+  margin-top: 30px;
+  font-size: 2.5rem;
+  color: #f36f6f;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+footer {
+  background-color: #f36f6f;
+  color: white;
+  text-align: center;
+  padding: 20px 0;
+  font-size: 1rem;
+  border-top: 5px solid #333;
+}
+
+.card {
+  max-width: 400px;
+  margin: 20px auto;
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  text-align: center;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+}
+
+.card img {
+  width: auto;
+  max-width: 90%;
+  height: auto;
+  display: block;
+  margin: 15px auto;
+  border-radius: 8px;
+}
+
+.card-body {
+  padding: 20px;
+  background-color: #fff;
+}
+
+.card-title {
+  font-size: 1.6rem;
+  font-weight: bold;
+  color: #f36f6f;
+  margin-bottom: 15px;
+}
+
+.card-text {
+  font-size: 1rem;
+  color: #777;
+  line-height: 1.6;
+  font-style: italic;
+}
+
+.no-image {
+  background-color: #fef9f4;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 12px;
+}
+
+.no-image .card-body {
+  text-align: center;
+  padding: 20px;
+}
+
+.no-image .card-title {
+  font-size: 1.8rem;
+  color: #f36f6f;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.no-image .card-text {
+  font-size: 1.1rem;
+  color: #555;
+  line-height: 1.5;
+  font-style: italic;
+}
+.image-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fill,1fr);
+  gap: 10px;
+  padding: 10px;
+}
+.image-lists {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
+  gap: 10px;
+  padding: 10px;
+}
+
+.image-list img {
+  width: 100%;
+  height: auto;
+  border-radius: 5px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+.love-message {
+  background: #fbe3e3; /* Màu nền nhẹ nhàng và ấm áp */
+  padding: 50px 20px;
+  font-family: 'Arial', sans-serif;
+  border-radius: 15px;
+  max-width: 800px;
+  margin: 0 auto;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.love-message .container {
+  max-width: 1000px;
+}
+
+.message-header h2 {
+  text-align: center;
+  color: #f36f6f;
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 30px;
+}
+
+.message-content {
+  color: #555;
+  font-size: 1.1rem;
+  line-height: 1.8;
+  text-align: justify;
+}
+
+.message-content p {
+  margin-bottom: 20px;
+}
+
+.message-content p:first-child {
+  margin-top: 0;
+}
+
+.message-content p:last-child {
+  margin-bottom: 0;
+}
+
+.message-content {
+  background: #fff;
+  padding: 25px;
+  border-radius: 10px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Đặc biệt cho đoạn chữ quan trọng, tăng độ đậm để tạo nhấn mạnh */
+.message-content p:nth-child(2),
+.message-content p:nth-child(4) {
+  font-weight: bold;
+  color: #e74c3c;
+}
