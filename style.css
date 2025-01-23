@@ -223,8 +223,7 @@ footer {
 }
 
 /* Đặc biệt cho đoạn chữ quan trọng, tăng độ đậm để tạo nhấn mạnh */
-.message-content p:nth-child(2),
-.message-content p:nth-child(4) {
+.message-content p:nth-child(even) {
   font-weight: bold;
   color: #e74c3c;
 }
